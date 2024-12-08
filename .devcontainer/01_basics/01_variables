@@ -1,1 +1,4 @@
-const 
+const accountId = 14456
+let accountEmail = "prath@gmail.com"
+var accountPassword ="12345"
+accountCity = "Jaipur"
