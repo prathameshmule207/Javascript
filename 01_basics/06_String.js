@@ -29,16 +29,20 @@ const GameName = new String("Pratham Gaming");
 
 
 let mailid = "        prathameshmule%207%@gmail.com      "
-console.log(mailid);
+// console.log(mailid);
 
-console.log(mailid.trim());
+// console.log(mailid.trim());
 
-console.log(mailid.replaceAll('%','-'));
+// console.log(mailid.replaceAll('%','-'));
 
-console.log(mailid.includes('prathamesh'));
-console.log(mailid.includes('ravi'));
+// console.log(mailid.includes('prathamesh'));
+// console.log(mailid.includes('ravi'));
 
-console.log(mailid.split('%'));
+// console.log(mailid.split('%'));
+
+
+
+
 
 
 
