@@ -1,6 +1,4 @@
-//singleton
 
-//object.create
 
 //Object Literals
 
