@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit And Remove</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="Language">
+<li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(LangName){
+        const li = document.createElement("li")
+        li.innerHTML = `${LangName}`
+        document.querySelector(`.Language`).appendChild(li)
+    }
+ addLanguage("Nodejs")
+ addLanguage("mongodb")
+
+ //another method
+ function ObtiMethod(LangName){
+ const li = document.createElement("li");
+ li.appendChild(document.createTextNode(LangName))
+ document.querySelector(`.Language`).appendChild(li)
+ }
+ ObtiMethod("golang")
+
+//=======================================================
+ //Edit
+ const SecondLang = document.querySelector("li:nth-child(2)")
+ SecondLang.innerHTML="ReactJS"
+
+ const fristlang =document.querySelector("li:first-child")
+ fristlang.outerHTML=`<li>Java</li>`
+
+ //=================================================================
+ //Remove
+ const lastlang = document.querySelector("li:last-child")
+ lastlang.remove()
+
+
+ </script>
+</html>
