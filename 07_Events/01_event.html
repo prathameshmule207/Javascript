@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event</title>
+</head>
+
+<body style="background-color: gray;color: aliceblue;">
+    <h2>Images</h2>
+    <ul id="Images">
+        <li><img width="200px" id="ps" src="https://pngimg.com/uploads/photoshop/photoshop_PNG12.png" alt="Pixel"></li>
+        <li><img width="200px" id="winter"
+                src="https://images.pexels.com/photos/6490568/pexels-photo-6490568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Pixel"></li>
+        <li><img width="200px" id="Home"
+                src="https://images.pexels.com/photos/29757832/pexels-photo-29757832/free-photo-of-bosporus-bridge-view-from-istanbul-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Pixel"></li>
+        <li><img width="200px" id="Architecture"
+                src="https://images.pexels.com/photos/29594127/pexels-photo-29594127/free-photo-of-intricate-moroccan-archway-in-fes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Pixel"></li>
+        <li> <a "style=" color: aliceblue;" href="https://Google.com">Google</a>
+        </li>
+    </ul>
+</body>
+<script>
+document.getElementById('Architecture').onclick= function(){
+    alert("Architechture Selected")
+}
+
+document.getElementById("Home").addEventListener(`click`,function(){
+    alert("Home clicked")
+})
+
+//Events 
+//type,timestamp,defaultPrevented
+//ClientX,clientY,screenX,screenY
+//altKey,ctrlKey,shiftKey,keyCode
+
+
+document.querySelector('#Images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName == 'IMG') {
+
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+    
+
+})
+</script>
+</html>
